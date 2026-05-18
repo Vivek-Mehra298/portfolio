@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Section } from "./ui/Section";
 import { PROJECTS } from "@/data";
 import { Github, ExternalLink, FolderGit2 } from "lucide-react";
+import Image from "next/image";
 import React, { useRef, useState } from "react";
 
 // Individual Project Card component to handle 3D tilt
@@ -54,26 +55,40 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
         {/* Glowing Top Border */}
         <div className="absolute top-0 left-0 w-full h-1 bg-brand-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
+        {/* Project Image */}
+        {project.image && (
+          <div className="relative w-full h-48 bg-primary overflow-hidden">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover group-hover:scale-110 transition-transform duration-500"
+              priority={index < 2}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface opacity-60" />
+          </div>
+        )}
+        
         <div className="p-8 flex flex-col flex-grow z-10 bg-surface" style={{ transform: "translateZ(30px)" }}>
           <div className="flex justify-between items-start mb-6">
-            <div className="p-3 bg-primary/10 text-primary rounded-lg">
+            <div className="p-3 bg-primary text-white rounded-lg">
               <FolderGit2 size={32} />
             </div>
             <div className="flex gap-4 items-center">
               {project.github !== "#" && (
-                <a href={project.github} target="_blank" rel="noreferrer" className="text-text-muted hover:text-primary transition-colors">
+                <a href={project.github} target="_blank" rel="noreferrer" className="text-text-muted hover:text-white transition-colors">
                   <Github size={22} />
                 </a>
               )}
               {project.live !== "#" && (
-                <a href={project.live} target="_blank" rel="noreferrer" className="text-text-muted hover:text-secondary transition-colors">
+                <a href={project.live} target="_blank" rel="noreferrer" className="text-text-muted hover:text-white transition-colors">
                   <ExternalLink size={22} />
                 </a>
               )}
             </div>
           </div>
           
-          <h3 className="text-2xl font-bold text-text-primary mb-4 group-hover:text-primary transition-colors">
+          <h3 className="text-2xl font-bold text-text-primary mb-4 group-hover:text-white transition-colors">
             {project.title}
           </h3>
           
@@ -91,7 +106,7 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
 
           <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-border/50">
             {project.tags.map((tag: string, idx: number) => (
-              <span key={idx} className="text-xs font-mono text-secondary px-2 py-1 rounded bg-background border border-border">
+              <span key={idx} className="text-xs font-mono text-white px-2 py-1 rounded bg-primary border border-border">
                 {tag}
               </span>
             ))}

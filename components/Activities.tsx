@@ -18,12 +18,12 @@ export function Activities() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="bg-surface border border-border p-6 rounded-xl hover:bg-surface/80 transition-colors flex gap-4"
           >
-            <div className="text-secondary flex-shrink-0 mt-1">
+            <div className="text-white flex-shrink-0 mt-1">
               <Award size={24} />
             </div>
             <div>
               <h3 className="text-lg font-bold text-text-primary mb-1">{activity.title}</h3>
-              <p className="text-sm font-medium text-primary mb-3">
+              <p className="text-sm font-medium text-white mb-3">
                 {activity.organization} <span className="text-text-muted font-normal">• {activity.duration}</span>
               </p>
               <p className="text-text-muted text-sm leading-relaxed">{activity.description}</p>

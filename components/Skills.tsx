@@ -35,10 +35,10 @@ export function Skills() {
             <motion.div
               key={index}
               variants={item}
-              className="bg-surface/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-[0_0_20px_rgba(124,58,237,0.15)] hover:border-primary/50 transition-all duration-300 group"
+              className="bg-surface/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-[0_0_20px_rgba(42,42,42,0.3)] hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-background rounded-lg text-primary group-hover:scale-110 group-hover:text-secondary transition-all">
+                <div className="p-3 bg-background rounded-lg text-white group-hover:scale-110 group-hover:text-white transition-all">
                   <Icon size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-text-primary">{skillGroup.category}</h3>
@@ -48,7 +48,7 @@ export function Skills() {
                 {skillGroup.items.map((skill, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 bg-background text-text-muted rounded-md text-sm hover:text-primary transition-colors cursor-default"
+                    className="px-3 py-1 bg-background text-text-muted rounded-md text-sm hover:text-white transition-colors cursor-default"
                   >
                     {skill}
                   </span>

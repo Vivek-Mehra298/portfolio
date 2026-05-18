@@ -61,6 +61,7 @@ export const EXPERIENCE = [
 export const PROJECTS = [
   {
     title: "Real-Time Collaborative Code Editor",
+    image: "/projects/code-editor.svg",
     tags: ["Next.js", "TypeScript", "Express.js", "MongoDB", "Socket.io", "Docker", "JWT"],
     description: "Multi-user code editor with real-time sync using Operational Transformation. Features Monaco Editor, sandboxed Docker execution, WebSocket presence awareness.",
     highlights: [
@@ -72,6 +73,7 @@ export const PROJECTS = [
   },
   {
     title: "CRM Web Application",
+    image: "/projects/crm-app.svg",
     tags: ["React", "TypeScript", "Firebase", "React Query", "Ant Design", "Vercel"],
     description: "Production-deployed CRM for end-to-end lead management across a 4-stage pipeline. Real-time Firestore sync with React Query optimistic updates.",
     highlights: [
@@ -83,6 +85,7 @@ export const PROJECTS = [
   },
   {
     title: "ProScript — AI Writing Tool",
+    image: "/projects/proscript.svg",
     tags: ["Next.js","TypeScript", "Express.js", "MongoDB Atlas"],
     description: "AI-powered writing assistant tool. Built with Next.js frontend and Express backend connected to MongoDB Atlas.",
     highlights: [],
@@ -91,6 +94,7 @@ export const PROJECTS = [
   },
   {
     title: "Ecole Globale School Website",
+    image: "/projects/school-website.svg",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     description: "Full multi-page institutional website for a girls boarding school in Dehradun. Includes dynamic routing for 8+ pages: Home, About, Admission, Academic, Student Life, Pastoral Care, Career, Latest Updates, Contact.",
     highlights: [

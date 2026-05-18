@@ -18,8 +18,8 @@ export function About() {
           </p>
           
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-4 py-2 rounded-full bg-surface border border-border text-primary text-sm font-medium">Open to Work</span>
-            <span className="px-4 py-2 rounded-full bg-surface border border-border text-secondary text-sm font-medium">Fresher</span>
+            <span className="px-4 py-2 rounded-full bg-surface border border-border text-white text-sm font-medium">Open to Work</span>
+            <span className="px-4 py-2 rounded-full bg-surface border border-border text-white text-sm font-medium">Fresher</span>
             <span className="px-4 py-2 rounded-full bg-surface border border-border text-text-primary text-sm font-medium">July 2026 Graduate</span>
           </div>
         </div>
@@ -38,7 +38,7 @@ export function About() {
              <motion.div
                animate={{ rotate: -360 }}
                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-               className="absolute inset-[-12px] rounded-full border border-secondary/30 -z-20"
+               className="absolute inset-[-12px] rounded-full border border-primary/30 -z-20"
              />
           </div>
         </div>

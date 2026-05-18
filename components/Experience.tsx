@@ -15,13 +15,13 @@ export function Experience() {
           whileInView={{ height: "100%" }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute left-[-1px] top-0 w-0.5 bg-gradient-to-b from-primary to-secondary origin-top"
+          className="absolute left-[-1px] top-0 w-0.5 bg-gradient-to-b from-primary to-primary/50 origin-top"
         />
 
         {EXPERIENCE.map((exp, index) => (
           <div key={index} className="relative pl-8 md:pl-12">
             {/* Timeline Dot */}
-            <div className="absolute left-[-21px] top-1 h-10 w-10 bg-surface border border-border rounded-full flex items-center justify-center text-primary z-10 shadow-[0_0_10px_rgba(124,58,237,0.2)]">
+            <div className="absolute left-[-21px] top-1 h-10 w-10 bg-surface border border-border rounded-full flex items-center justify-center text-white z-10 shadow-[0_0_10px_rgba(42,42,42,0.4)]">
               <Briefcase size={18} />
             </div>
 
@@ -35,7 +35,7 @@ export function Experience() {
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
                 <div>
                   <h3 className="text-xl font-bold text-text-primary">{exp.role}</h3>
-                  <p className="text-secondary font-medium">{exp.company} <span className="text-text-muted">• {exp.location}</span></p>
+                  <p className="text-white font-medium">{exp.company} <span className="text-text-muted">• {exp.location}</span></p>
                 </div>
                 <span className="text-text-muted bg-background px-3 py-1 rounded-full text-sm inline-block w-max">
                   {exp.duration}

@@ -36,7 +36,7 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-text-muted hover:text-primary transition-colors text-sm font-medium"
+              className="text-text-muted hover:text-white transition-colors text-sm font-medium"
             >
               {link.name}
             </a>
@@ -45,7 +45,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-text-primary hover:text-primary transition-colors"
+          className="md:hidden text-text-primary hover:text-white transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -67,7 +67,7 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-text-primary hover:text-primary transition-colors text-lg font-medium"
+                  className="text-text-primary hover:text-white transition-colors text-lg font-medium"
                 >
                   {link.name}
                 </a>

@@ -29,19 +29,19 @@ export function Contact() {
             className="space-y-8"
           >
             <div className="flex items-center gap-4 group">
-              <div className="w-12 h-12 bg-surface border border-border rounded-full flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/10 transition-all">
+              <div className="w-12 h-12 bg-surface border border-border rounded-full flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-primary/10 transition-all">
                 <Mail size={20} />
               </div>
               <div>
                 <p className="text-sm text-text-muted">Email</p>
-                <a href={`mailto:${CONTACT.email}`} className="text-text-primary font-medium hover:text-primary transition-colors">
+                <a href={`mailto:${CONTACT.email}`} className="text-text-primary font-medium hover:text-white transition-colors">
                   {CONTACT.email}
                 </a>
               </div>
             </div>
             
             <div className="flex items-center gap-4 group">
-              <div className="w-12 h-12 bg-surface border border-border rounded-full flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/10 transition-all">
+              <div className="w-12 h-12 bg-surface border border-border rounded-full flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-primary/10 transition-all">
                 <Phone size={20} />
               </div>
               <div>
@@ -51,7 +51,7 @@ export function Contact() {
             </div>
             
             <div className="flex items-center gap-4 group">
-              <div className="w-12 h-12 bg-surface border border-border rounded-full flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/10 transition-all">
+              <div className="w-12 h-12 bg-surface border border-border rounded-full flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-primary/10 transition-all">
                 <MapPin size={20} />
               </div>
               <div>
@@ -79,7 +79,7 @@ export function Contact() {
                 id="name"
                 name="name"
                 placeholder="John Doe"
-                className="w-full bg-surface border border-border rounded-lg px-4 py-3 text-text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                className="w-full bg-surface border border-border rounded-lg px-4 py-3 text-text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all"
                 required
               />
             </div>
@@ -90,13 +90,13 @@ export function Contact() {
                 name="message"
                 rows={4}
                 placeholder="Your message here..."
-                className="w-full bg-surface border border-border rounded-lg px-4 py-3 text-text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
+                className="w-full bg-surface border border-border rounded-lg px-4 py-3 text-text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all resize-none"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-primary hover:bg-primary/90 text-white rounded-lg px-6 py-4 font-semibold transition-all flex items-center justify-center gap-2 group hover:shadow-[0_0_20px_rgba(124,58,237,0.4)]"
+              className="w-full bg-primary hover:bg-primary/90 text-white rounded-lg px-6 py-4 font-semibold transition-all flex items-center justify-center gap-2 group hover:shadow-[0_0_20px_rgba(42,42,42,0.5)]"
             >
               Send Message
               <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -112,10 +112,10 @@ export function Contact() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex justify-center gap-6 pt-8 border-t border-border/50"
         >
-          <a href={CONTACT.github} target="_blank" rel="noreferrer" className="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-text-muted hover:text-white hover:bg-[#333] transition-all hover:-translate-y-1 shadow-lg">
+          <a href={CONTACT.github} target="_blank" rel="noreferrer" className="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-text-muted hover:text-white hover:bg-primary transition-all hover:-translate-y-1 shadow-lg">
             <Github size={24} />
           </a>
-          <a href={CONTACT.linkedin} target="_blank" rel="noreferrer" className="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-text-muted hover:text-white hover:bg-[#0077b5] transition-all hover:-translate-y-1 shadow-lg">
+          <a href={CONTACT.linkedin} target="_blank" rel="noreferrer" className="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-text-muted hover:text-white hover:bg-primary transition-all hover:-translate-y-1 shadow-lg">
             <Linkedin size={24} />
           </a>
         </motion.div>
