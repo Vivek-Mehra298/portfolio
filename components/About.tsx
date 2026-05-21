@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section } from "./ui/Section";
-import { User } from "lucide-react";
 
 export function About() {
   return (
@@ -24,10 +24,16 @@ export function About() {
           </div>
         </div>
 
-        {/* Image/Avatar Placeholder */}
+        {/* Image/Avatar */}
         <div className="flex justify-center md:justify-end relative">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-surface flex items-center justify-center border border-border z-10">
-             <User size={64} className="text-text-muted opacity-50" />
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 z-10 shadow-2xl">
+             <Image
+               src="/it-me.jpeg"
+               alt="Profile picture"
+               fill
+               className="object-cover"
+               priority
+             />
              
              {/* Animated Rings */}
              <motion.div
