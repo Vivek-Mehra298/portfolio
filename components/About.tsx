@@ -7,7 +7,7 @@ import { Section } from "./ui/Section";
 export function About() {
   return (
     <Section id="about" title="About Me">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
         <div className="space-y-6 text-lg text-text-muted leading-relaxed">
           <p>
