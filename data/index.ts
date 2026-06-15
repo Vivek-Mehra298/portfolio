@@ -59,6 +59,21 @@ export const EXPERIENCE = [
 ];
 
 export const PROJECTS = [
+{
+  title: "AutoApply",
+  image: "/projects/autoapply.png",
+  tags: ["Next.js", "TypeScript", "Express", "MongoDB", "Groq AI", "Llama 3"],
+  description: "An AI-powered job application platform that scrapes job postings, runs a research agent to profile target companies, scores resume-job compatibility, and generates personalized cold emails and cover letters to maximize response rates.",
+  highlights: [
+    "Automated job posting scraper using Puppeteer & Cheerio to extract requirements and skills",
+    "AI research agent that gathers company news, goals, and products for hyper-personalized outreach",
+    "Resume-to-job match analysis with a 0-100 compatibility score and missing-skill detection",
+    "AI-generated cold emails and cover letters referencing real company initiatives",
+    "Centralized dashboard to track outreach performance",
+  ],
+  github: "https://github.com/Vivek-Mehra298/AutoApply",
+  live: "https://auto-apply-gilt.vercel.app/",
+},
   {
     title: "Real-Time Collaborative Code Editor",
     image: "/projects/code-editor.svg",
@@ -88,7 +103,10 @@ export const PROJECTS = [
     image: "/projects/proscript.svg",
     tags: ["Next.js","TypeScript", "Express.js", "MongoDB Atlas"],
     description: "AI-powered writing assistant tool. Built with Next.js frontend and Express backend connected to MongoDB Atlas.",
-    highlights: [],
+    highlights: [
+      "A person can input a topic and ProScript generates a well-structured article with an introduction, main points, and conclusion. The generated content is stored in MongoDB Atlas for future reference and can be retrieved or edited by the user.",
+      "A person can also upload their informational videos and ProScript will generate a well-structured article based on the content of the video. The generated article is stored in MongoDB Atlas for future reference and can be retrieved or edited by the user."
+    ],
     github: "https://github.com/Vivek-Mehra298/Pro-Script",
     live: "https://pro-script.vercel.app/",
   },
