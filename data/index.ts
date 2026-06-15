@@ -135,5 +135,5 @@ export const CONTACT = {
   phone: "+91 7489549709",
   location: "Chhindwara, M.P.",
   github: "https://github.com/Vivek-Mehra298",
-  linkedin: "https://linkedin.com/in/vivek-dehariya", // Placeholder, assuming based on name
+  linkedin: "https://www.linkedin.com/in/vivek-dehariya-4b3669263/", // Placeholder, assuming based on name
 };
