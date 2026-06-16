@@ -81,7 +81,7 @@ export function Hero() {
             <a href="#projects" className="px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold transition-all shadow-[0_0_20px_rgba(42,42,42,0.4)] hover:shadow-[0_0_30px_rgba(42,42,42,0.6)] transform hover:-translate-y-1">
               View Projects
             </a>
-            <a href="#" className="px-8 py-4 border border-border hover:border-secondary text-text-primary hover:text-white rounded-lg font-semibold transition-all flex items-center gap-2 transform hover:-translate-y-1 group">
+            <a href="/resume.pdf" download className="px-8 py-4 border border-border hover:border-secondary text-text-primary hover:text-white rounded-lg font-semibold transition-all flex items-center gap-2 transform hover:-translate-y-1 group">
               <Download size={20} className="group-hover:text-white transition-colors" />
               Download Resume
             </a>
